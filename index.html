@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica - HTML5 Avanzado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML5 Avanzado</h1>
+            <p>Guía completa de desarrollo web</p>
+        </header>
+        <div class="nav-links-container">
+            <a class="nav-link" href="#Introducción_a_HTML5">Introducción a HTML5</a>
+            <a class="nav-link" href="#Estructura_básica">Estructura básica</a>
+            <a class="nav-link" href="#Etiquetas_semánticas">Etiquetas semánticas</a>
+            <a class="nav-link" href="#Multimedia">Multimedia</a>
+            <a class="nav-link" href="#Formularios_avanzados">Formularios avanzados</a>
+            <a class="nav-link" href="#API_HTML5">API HTML5</a>
+            <a class="nav-link" href="#Buenas_prácticas">Buenas prácticas</a>
+        </div>
+        <div class="social-links">
+            <a href="https://web.facebook.com/profile.php?id=61573209977446&locale=es_LA" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/victoriano-dominguez-henríquez-614785144" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/InformaticaEmpresarial-Tic-Docente/InformaticaEmpresarial-Tic-Docente" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introducción_a_HTML5">
+            <header>Introducción a HTML5</header>
+            <p>HTML5 es la quinta revisión importante del lenguaje básico de la World Wide Web, HTML.</p>
+            <p>Esta versión introduce numerosas características nuevas que facilitan la creación de aplicaciones web más dinámicas e interactivas.</p>
+            <ul>
+                <li>Nuevos elementos semánticos como &lt;header&gt;, &lt;footer&gt;, &lt;section&gt;, etc.</li>
+                <li>Nuevos atributos para formularios como placeholder, required, pattern</li>
+                <li>Soporte nativo para audio y video sin necesidad de plugins</li>
+                <li>Canvas para gráficos y animaciones</li>
+                <li>Almacenamiento local mejorado</li>
+            </ul>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html lang="es"&gt;</code>
+            <p>HTML5 está diseñado para ser compatible con versiones anteriores y funciona en todos los navegadores modernos.</p>
+        </section>
+
+        <section class="main-section" id="Estructura_básica">
+            <header>Estructura básica</header>
+            <p>Todos los documentos HTML5 deben comenzar con una declaración &lt;!DOCTYPE html&gt;.</p>
+            <p>La estructura básica consta de:</p>
+            <ul>
+                <li>Elemento raíz &lt;html&gt;</li>
+                <li>Sección &lt;head&gt; con metadatos</li>
+                <li>Sección &lt;body&gt; con el contenido visible</li>
+            </ul>
+            <code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título del documento&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Contenido --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+            <p>El atributo <em>lang</em> especifica el idioma del documento para accesibilidad y SEO.</p>
+        </section>
+
+        <section class="main-section" id="Etiquetas_semánticas">
+            <header>Etiquetas semánticas</header>
+            <p>HTML5 introduce elementos semánticos que describen mejor su significado tanto para el navegador como para el desarrollador.</p>
+            <p>Estas etiquetas mejoran la accesibilidad y el SEO:</p>
+            <ul>
+                <li>&lt;header&gt; - Cabecera de sección o página</li>
+                <li>&lt;nav&gt; - Contiene enlaces de navegación</li>
+                <li>&lt;section&gt; - Sección temática del contenido</li>
+                <li>&lt;article&gt; - Contenido independiente y autónomo</li>
+                <li>&lt;footer&gt; - Pie de página o sección</li>
+            </ul>
+            <code>&lt;article&gt;
+    &lt;header&gt;
+        &lt;h2&gt;Título del artículo&lt;/h2&gt;
+    &lt;/header&gt;
+    &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;</code>
+            <p>El uso correcto de estas etiquetas mejora la estructura del documento y su indexación.</p>
+        </section>
+
+        <section class="main-section" id="Multimedia">
+            <header>Multimedia</header>
+            <p>HTML5 proporciona elementos nativos para multimedia sin necesidad de plugins externos.</p>
+            <p>Los principales elementos son:</p>
+            <ul>
+                <li>&lt;video&gt; - Para incrustar contenido de video</li>
+                <li>&lt;audio&gt; - Para incrustar contenido de audio</li>
+                <li>&lt;canvas&gt; - Para dibujar gráficos con JavaScript</li>
+                <li>&lt;svg&gt; - Para gráficos vectoriales escalables</li>
+            </ul>
+            <code>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    Tu navegador no soporta el elemento video.
+&lt;/video&gt;</code>
+            <code>&lt;audio controls&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+    Tu navegador no soporta el elemento audio.
+&lt;/audio&gt;</code>
+            <p>Estos elementos admiten múltiples formatos y son altamente personalizables.</p>
+        </section>
+
+        <section class="main-section" id="Formularios_avanzados">
+            <header>Formularios avanzados</header>
+            <p>HTML5 introduce nuevos tipos de entrada y atributos para formularios.</p>
+            <p>Nuevos tipos de input:</p>
+            <ul>
+                <li>email, url, tel - Para datos específicos</li>
+                <li>number, range - Para valores numéricos</li>
+                <li>date, time, datetime-local - Para fechas y horas</li>
+                <li>color - Selector de color</li>
+                <li>search - Para campos de búsqueda</li>
+            </ul>
+            <code>&lt;input type="email" name="user_email" required&gt;</code>
+            <code>&lt;input type="date" name="fecha_nacimiento"&gt;</code>
+            <p>Nuevos atributos como <em>placeholder</em>, <em>required</em>, <em>pattern</em> y <em>autocomplete</em> mejoran la experiencia del usuario.</p>
+        </section>
+
+        <section class="main-section" id="API_HTML5">
+            <header>API HTML5</header>
+            <p>HTML5 incluye varias APIs poderosas para aplicaciones web modernas.</p>
+            <p>APIs principales:</p>
+            <ul>
+                <li>Geolocalización - Acceso a la ubicación del usuario</li>
+                <li>Drag and Drop - Arrastrar y soltar elementos</li>
+                <li>Web Storage - Almacenamiento local y de sesión</li>
+                <li>Web Workers - Ejecución de scripts en segundo plano</li>
+                <li>Web Sockets - Comunicación bidireccional con el servidor</li>
+            </ul>
+            <code>// Ejemplo de geolocalización
+navigator.geolocation.getCurrentPosition(
+    function(position) {
+        console.log(position.coords.latitude, position.coords.longitude);
+    }
+);</code>
+            <p>Estas APIs permiten crear aplicaciones web ricas y complejas.</p>
+        </section>
+
+        <section class="main-section" id="Buenas_prácticas">
+            <header>Buenas prácticas</header>
+            <p>Para desarrollar con HTML5 de manera profesional, sigue estas buenas prácticas:</p>
+            <ul>
+                <li>Usa la estructura semántica correcta</li>
+                <li>Valida tu código regularmente</li>
+                <li>Optimiza el rendimiento de carga</li>
+                <li>Prioriza la accesibilidad</li>
+                <li>Documenta tu código</li>
+            </ul>
+            <code>&lt;!-- Buen ejemplo de comentario --&gt;
+&lt;section id="comentarios"&gt;
+    &lt;h2&gt;Comentarios&lt;/h2&gt;
+    &lt;article class="comentario"&gt;
+        &lt;p&gt;Contenido del comentario...&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</code>
+            <p>El código limpio y bien estructurado es más fácil de mantener y escalar.</p>
+        </section>
+    </main>
+</body>
+</html>
