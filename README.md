@@ -50,7 +50,7 @@ Este proyecto de certificación demuestra la creación de una página de documen
 Profundiza en Flexbox con el curso [Diseño Web Responsivo de FreeCodeCamp](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
 ## 🖼️ Demo del Proyecto
-[Ver galería en vivo](https://informaticaempresarial-tic-docente.github.io/GaleriaFlexboxCSS/)
+[Ver Página Documentación Técnica](https://informaticaempresarial-tic-docente.github.io/documentaci-n-t-cnica/)
 
 ## 👨‍💻 Contacto del Desarrollador
 **Victoriano Domínguez Henríquez**  
